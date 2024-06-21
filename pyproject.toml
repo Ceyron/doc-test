@@ -1,0 +1,38 @@
+[project]
+name = "doc-test"
+version = "0.0.1"
+description = "Testing documentation generation with markdown."
+readme = "README.md"
+requires-python ="~=3.10"
+authors = [
+  {name = "Felix Koehler"},
+]
+urls = {repository = "https://github.com/Ceyron/doc-test" }
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | docs
+  )/
+)
+'''
+
+[tool.setuptools.packages.find]
+where = ["."]  # list of folders that contain the packages (["."] by default)
+include = ["doc_test*"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
