@@ -9,3 +9,4 @@ site/
 .idea
 .python-version
 .DS_Store
+.vscode
