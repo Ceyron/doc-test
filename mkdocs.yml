@@ -29,6 +29,15 @@ theme:
     twitter_name: "@felix_m_koehler"
     twitter_url: "https://twitter.com/felix_m_koehler"
 
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/felix_m_koehler
+    - icon: fontawesome/brands/github
+      link: https://github.com/ceyron
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@MachineLearningSimulation
+
 site_name: Doc-Test
 site_description: Testing automatic doc generation using mkdocs.
 site_author: Felix Koehler
