@@ -52,4 +52,5 @@ plugins:
 
 nav:
     - 'index.md'
+    - 'classes.md'
     - 'examples/a_jupyter.ipynb'
