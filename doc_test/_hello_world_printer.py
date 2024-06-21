@@ -4,8 +4,8 @@ def print_hello_world(name: str, *, additional_text: str = ""):
 
     **Arguments:**
 
-    - name: Name of the person to greet.
-    - additional_text: Additional text to append to the message.
+    - `name: str`: Name of the person to greet.
+    - `additional_text: str`: Additional text to append to the message.
 
     **Returns:**
 
