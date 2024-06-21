@@ -23,6 +23,12 @@ theme:
     icon:
         repo: fontawesome/brands/github  # GitHub logo in top right
 
+    custom_dir: "docs/_overrides"  # Overriding part of the HTML
+
+    # These additions are my own custom ones, having overridden a partial.
+    twitter_name: "@felix_m_koehler"
+    twitter_url: "https://twitter.com/felix_m_koehler"
+
 site_name: Doc-Test
 site_description: Testing automatic doc generation using mkdocs.
 site_author: Felix Koehler
@@ -49,9 +55,12 @@ markdown_extensions:
         generic: true
 
 extra_javascript:
-    - javascripts/mathjax.js
+    - _static/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+    - _static/custom_css.css
 
 plugins:
     - search  # default search plugin; needs manually re-enabling when using any other plugins
